@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+
+<head>
+<body>
+  <style>
+    body{
+     background-image: url(student-849826_1280.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-height: 100vh;  
+    }
+    #form{
+      margin-top: auto;
+      margin-top: 20vh;
+      padding: 3%;
+      text-align: center;
+      border-radius: 20px;
+      opacity: 0.8;
+    }
+    label{
+      float: left;
+    }
+    #form{
+      margin: auto;
+      width: 50%;
+      position: relative;
+    animation: myslide 2S ease-in;
+   
+    }
+    
+
+
+    @keyframes myslide{
+      0%{
+        left: -100%;
+      }
+      100%{
+        left: 0%;
+      }
+    }
+    
+  </style>-
+</head>
+<body class="bg-primary">
+  <form id="form" method="post"  class="col-8 bg-light">
+    <h3 class="text-primary">Registration form</h3>
+    fill form below <br>
+    <hr>
+    <label class="fa fa-user"> fulname</label>
+
+    <input type="text" class="forum-control"
+    placeholder="fulname"><br>
+    <label class="fa fa-envelop"> Email</label>
+    <input type="Email" class="form-control"
+    placeholder="Email"><br>
+    <label class="fa fa-Phone"> Phone</label>
+    <input type="number" class="form-control"
+    placeholder="Phone"><br>
+    <label class="fa fa calender"> DOB</label>
+    <input type="date" class="form-control">
+    <label class="fa fa-calender"> DOB</label>
+    <input type="datetime-local"
+    class="form-control"
+    placeholder="Fulname"><br>
+    <label for="upl" class="Float-start"
+    >upload file</label>
+    <input type="file" class="form control"
+    id="upl"><br>
+    <label>Gender</label>
+    <select name="id="" class="form-select">
+      <option value="">Female</option>
+      <option value="">Male</option>
+    </select><br>
+    <label>Password</label>
+    <input type="password"><br><br>
+    Already have an account<br><a href="./Login.html">Login</a>
+   </form>
+</body>

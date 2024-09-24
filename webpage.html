@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/font-awesome/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/font-awesome/font-awesome/css/font-awesome.min.css"> 
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+</head>
+<body>
+    <script>
+        function Fun(){
+confirm('are you sure');
+if(con ==true){
+    alert('you clicked ok button');
+}else{
+    alert('you clicked cancel button');
+}
+        }
+        if(con !=true){
+            alert('you click ok button');
+        }else{
+            ('you click cancle')       }
+    </script>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(student-849826_1280.jpg);
+            background-size: cover;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: rgb(144, 129, 231);
+        }
+        nav{
+            background: #ffffff;
+            height: 60px;
+            width: 100%;
+        }
+        nav ul li{
+            font-size: 30px;
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+        .-title{
+            top: 70%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-500%);
+            width: 1300px;
+            margin-top: 1000px;
+            margin-bottom: 100px;
+            border-radius: 20px;
+        }
+        .-title input{
+            width: 70%;
+            height: 50px;
+            padding: 0 20px;
+            border-radius: 20px;
+            border: 0;
+        }
+        .-title textarea{
+            width: 70%;
+            height: 100px;
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+            border: 0;
+        }
+        .-title button{
+            height: 30px;
+            padding: 10px 30px;
+            background: rgb(95, 7, 29);
+            width: 70%;
+            text-align: center;
+            padding-bottom: 25px;
+            border-radius: 20px;
+            color: white;
+            border: 0;
+         }
+         .fa-window-close{
+            color: rgb(95, 7, 29);
+            transition: color 0.3s;
+         }
+         .fa-window-close:hover{
+            color:red
+         }
+        #form{
+            width: 500px;
+      padding-left: 8%;
+      padding: 1%;
+      text-align: center;
+      border-radius: 20px;
+      opacity: 0.8;
+      box-shadow: 30;
+    }
+    .title{
+        position: relative;
+        padding: 100px;
+        margin-left: 500px;
+        margin-top: 50px;
+        border: 0;
+    }
+    .title input{
+        width: 500px;
+        line-height: 10vh;
+        padding: 0 30px;
+        border-radius: 20px;
+        border: 0;
+    }
+    .title i{
+        position: absolute;
+        width: 100%;
+        left: 550px;
+        margin-top: 20px;
+        font-size: 30px;
+
+    }
+    ul{
+            /* float: right; */
+            margin-right: 20px;
+            color: white;
+        }
+        ul li{
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            line-height: 20px;
+            padding: 20px;
+        }
+        li:last-child{
+            position: absolute;
+            padding-left: 100PX;
+        }
+        nav {
+            position: fixed;
+            padding-top: 0PX;
+            top: 0PX;
+            
+            
+        }
+        nav ul li{
+            position: fixed;
+            color: black;
+        }
+
+    </style>
+   <nav class="nav">
+    <ul>
+        <li>To Do list Web App</li>
+    </ul>
+   </nav> 
+   <div class="-title">
+    <body class="bg-primary">
+        <form id="form" method="post"  class="col-8 bg-black">
+    <form action="#">
+    <input type="text" name="title" placeholder="Title" required><br><br>
+    <textarea name="Description" placeholder="Description"></textarea><br>
+    <button>save</button>
+   </div>
+   <!-- onclick="prompt('please fill out this field')"> -->
+   <div class="title">
+    
+   <ul>
+    <li>Title</li>
+    <li>Description</li>
+    <li>Delete</li>
+   </ul><hr style="height: 5px; width: 500px; position: relative;bottom: 30px;background-color: white;">
+    <i class="fa fa-window-close"></i>
+    <input type="text" name="title     short Description" placeholder="Title        short Description"><br><br>
+    <i class="fa fa-window-close" aria-hidden="true"></i>
+    <input type="text" name="title      next" placeholder="Title        next short Description"><br><br>
+   </div>
+</body>
+</html>

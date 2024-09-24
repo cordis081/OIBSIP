@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/font-awesome/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="./css/font-awesome/font-awesome/css/font-awesome.min.css"> 
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+
+
+<head>
+<body>
+  <style>
+    body{
+      background-image: url(college-student-3500990_1280.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-height: 100vh;  
+    }
+    #form{
+      margin-top: auto;
+      margin-top: 20vh;
+      padding: 3%;
+      text-align: center;
+      border-radius: 20px;
+      opacity: 0.8;
+      animation: myslide 2S ease-in;
+    }
+    label{
+      float: left;
+    }
+    #form{
+      margin: auto;
+      width: 50%;
+      position: relative;
+   
+    }
+    .lab input{
+      width: 600px;
+      display: block;
+    }
+    .fa-user{
+     font-size: 50px;
+     padding-bottom: 20px;
+    }
+    
+    @keyframes myslide{
+      0%{
+        left: -100%;
+      }
+      100%{
+        left: 0%;
+      }
+    }
+   
+
+    
+  </style>
+</head>
+<body class="bg-primary">
+  <form id="form" method="post"  class="col-8 bg-light">
+    <i class="fa fa-user" aria-hidden="true"></i>
+    <div class="lab">
+      <label> Email</label>
+    <input type="Email" class="form-control"
+    placeholder="Email"><br>
+    <label>Password</label>
+    <input type="password" class="form-control"
+    placeholder="password"><br>
+    Don't have an account<br><a href="./sign up.html">Sign up</a>
+   </form>
+</body>

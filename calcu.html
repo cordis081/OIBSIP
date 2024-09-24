@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script>
+        
+        function no8(){
+            document.getElementById('dis').value += 8;
+        }
+        function no1(){
+            document.getElementById('dis').value += 1;
+        }
+        function yes(){
+            document.getElementById('dis').value += '/';
+            
+        }
+        function _bck(){
+            bck1 = document.getElementById('dis').value;
+            lbck = bck1.length;
+            rlbck = lbck - 1;
+            document.getElementById('dis').value = bck1.substring(0,rlbck);
+        }
+        function clr(){
+            document.getElementById('dis').value = '';
+        }
+        function eql(){
+            document.getElementById('dis').value = eval(document.getElementById('dis').value);
+        }
+            //  if(window.sessionStorage.getItem('dsi')){
+
+            //     old = window.sessionStorage.getItem('old');
+            //     nold = window.sessionStorage.getItem('nold');
+
+            //     nold++;
+
+            //     no = document.getElementById('dis').value;
+            //     nom = no.substring(nold);
+
+            //     n=old;
+            //     for(i=1;i<nom;i++){
+            //         n *= old;
+            //     }
+
+            //     document.getElementById('dis').value = n;
+            //     }else{
+
+                   
+        
+        function no7(){
+            document.getElementById('dis').value += 7;
+        }
+        function no1(){
+            document.getElementById('dis').value += 1;
+        }
+        function no2(){
+            document.getElementById('dis').value += 2;
+        }
+        function no3(){
+            document.getElementById('dis').value += 3;
+        }function no4(){
+            document.getElementById('dis').value += 4;
+        }function no5(){
+            document.getElementById('dis').value += 5;
+        }function no6(){
+            document.getElementById('dis').value += 6;
+        }
+        function _mul(){
+            document.getElementById('dis').value += '*';
+        }
+        function minus(){
+            document.getElementById('dis').value += '-';
+        }
+        function _add(){
+            document.getElementById('dis').value += '+';
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <div class="col-5 m-auto bg-warning p-3 text-center text-light">
+        <label for="">Simple calculator</label>
+        <input type="text" id="dis" class="form-control text-end" placeholder="0" readonly>
+        <button class="btn btn-secondary m-1" onclick="no7()">7</button>
+        <button class="btn btn-secondary m-1" onclick="no8()">8</button>
+        <button class="btn btn-secondary m-1" onclick="no9()">9</button>
+        <button class="btn btn-primary m-1" onclick="yes()">/</button><br>
+        <button class="btn btn-secondary m-1" onclick="no4()">4</button>
+        <button class="btn btn-secondary m-1" onclick="no5()">5</button>
+        <button class="btn btn-secondary m-1" onclick="no6()">6</button>
+        <button class="btn btn-primary m-1" onclick="_mul()">x</button><br>
+        <button class="btn btn-secondary m-1" onclick="no1()">1</button>
+        <button class="btn btn-secondary m-1" onclick="no2()">2</button>
+        <button class="btn btn-secondary m-1"onclick="no3()">3</button>
+        <button class="btn btn-primary m-1" onclick="minus()">-</button><br>
+        <button class="btn btn-primary m-1" onclick="_add()">+</button>
+        <button class="btn btn-secondary m-1" onclick="zero()">0</button>
+        <button class="btn btn-secondary m-1" onclick="dot()">.</button>
+        <button class="btn btn-danger m-1"onclick="eql()">=</button><br>
+        <button class="btn btn-success m-1" onclick="clr()">clear</button>
+        <button class="btn btn-success m-1"onclick="_bck()">back</button>
+        <button class="btn btn-success m-1"onclick="x()">X</button>
+        
+    </div>
+</body>
+</html>
