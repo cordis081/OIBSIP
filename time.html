@@ -1,0 +1,21 @@
+<p id="ntc"></p>
+
+<script>
+    t = 70;
+    _tim();
+    function _tim(){
+        document.getElementById('ntc').
+        innerHTML = t;
+        t--;
+        setTimeout(_tim,400);
+    }
+</script>
+<style>
+    input{
+        border: none;
+        border-bottom: 1px solid black;
+    }
+</style>
+<p id="stp"></p>
+<p>1. 2x2 =<input type="text"></p>
+<button>check</button>
